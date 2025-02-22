@@ -16,6 +16,7 @@ import time
 import psutil
 
 #setting the path to the quantized llama model
+# Replace the following path with your own
 model = llama_cpp.Llama(model_path="/Users/ShajeeRehman/llama-modified/llama.cpp-master/models/7B/Quantized/ggml-model-q4_0.bin", chat_format="llama-2")
 
 #the following queries were selected from MMLU and HellaSwag examples and the coding query is my own original query.
