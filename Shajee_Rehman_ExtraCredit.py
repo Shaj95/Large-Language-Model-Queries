@@ -104,7 +104,7 @@ def open_model_window(model_name):
         results_window.title("Results")
 
         # Assuming you have image files in a specific path
-        image_path = "/Users/SaudRAlvi/Desktop/TermProjectData.png"
+        image_path = "/Users/ShajeeRehman/Desktop/TermProjectData.png" # replace the path with your own
         
         # Display images from the specified path
         display_images(results_window, image_path)
@@ -140,7 +140,8 @@ llamathirteen_button.pack(pady=5)
 def get_llamaseven_response(queries):
 
     #setting the path to the quantized llama model
-    model = llama_cpp.Llama(model_path="/Users/SaudRAlvi/llama-modified/llama.cpp-master/models/7B/Quantized/ggml-model-q4_0.bin", chat_format="llama-2")
+    # Replace the following path with your own
+    model = llama_cpp.Llama(model_path="/Users/ShajeeRehman/llama-modified/llama.cpp-master/models/7B/Quantized/ggml-model-q4_0.bin", chat_format="llama-2")
 
     
     for query in queries:
@@ -173,7 +174,8 @@ def get_llamaseven_response(queries):
 def get_llamathirteen_response(queries):
 
     #setting the path to the quantized llama model
-    model = llama_cpp.Llama(model_path="/Users/SaudRAlvi/llama-modified/llama.cpp-master/models/13B/Quantized/ggml-model-q4_0.bin", chat_format="llama-2")
+    # Replace the following path with your own
+    model = llama_cpp.Llama(model_path="/Users/ShajeeRehman/llama-modified/llama.cpp-master/models/13B/Quantized/ggml-model-q4_0.bin", chat_format="llama-2")
 
 
     for query in queries:
@@ -206,7 +208,7 @@ def get_llamathirteen_response(queries):
 def display_images(window, path):
 
         # Open the image file using Pillow
-        image = Image.open("/Users/SaudRAlvi/Desktop/TermProjectData.png")
+        image = Image.open("/Users/ShajeeRehman/Desktop/TermProjectData.png") # replace this with your own path
 
         # Convert the Pillow image to a Tkinter PhotoImage
         img = ImageTk.PhotoImage(image)
